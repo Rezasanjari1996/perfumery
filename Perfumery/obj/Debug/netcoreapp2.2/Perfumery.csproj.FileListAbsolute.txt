@@ -46,3 +46,8 @@ C:\Users\Zaravand\source\repos\Perfumery\Perfumery\obj\Debug\netcoreapp2.2\Razor
 C:\Users\Zaravand\source\repos\Perfumery\Perfumery\bin\Debug\netcoreapp2.2\npm.json
 C:\Users\Zaravand\source\repos\Perfumery\Perfumery\bin\Debug\netcoreapp2.2\package1.json
 C:\Users\Zaravand\source\repos\Perfumery\Perfumery\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index3.cshtml.g.cs
+C:\Users\Zaravand\source\repos\Perfumery\Perfumery\obj\Debug\netcoreapp2.2\Razor\Views\Perfumes\Create.cshtml.g.cs
+C:\Users\Zaravand\source\repos\Perfumery\Perfumery\obj\Debug\netcoreapp2.2\Razor\Views\Perfumes\Delete.cshtml.g.cs
+C:\Users\Zaravand\source\repos\Perfumery\Perfumery\obj\Debug\netcoreapp2.2\Razor\Views\Perfumes\Details.cshtml.g.cs
+C:\Users\Zaravand\source\repos\Perfumery\Perfumery\obj\Debug\netcoreapp2.2\Razor\Views\Perfumes\Edit.cshtml.g.cs
+C:\Users\Zaravand\source\repos\Perfumery\Perfumery\obj\Debug\netcoreapp2.2\Razor\Views\Perfumes\Index.cshtml.g.cs

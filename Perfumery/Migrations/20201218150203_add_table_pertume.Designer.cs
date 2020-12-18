@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Perfumery.Models;
 
 namespace Perfumery.Migrations
 {
     [DbContext(typeof(PerfumeryConext))]
-    partial class PerfumeryConextModelSnapshot : ModelSnapshot
+    [Migration("20201218150203_add_table_pertume")]
+    partial class add_table_pertume
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

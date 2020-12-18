@@ -2,13 +2,14 @@
 
 @{
     ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/_Store.cshtml";
+    var perfumes = ViewBag.perfumes as person[];
+    // Layout = "~/Views/Shared/_Store.cshtml";
 }
-
+ 
 <h1>Index</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">ثبت نام </a>
 </p>
 <table class="table">
     <thead>

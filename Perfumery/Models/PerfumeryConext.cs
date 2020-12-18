@@ -15,5 +15,6 @@ namespace Perfumery.Models
 
 
        public DbSet<person> person { get; set; }
+        public DbSet<Perfume> Perfumes { get; set; }
     }
 }

@@ -1,0 +1,82 @@
+﻿@model IEnumerable<Perfumery.Models.Perfume>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_siteLayoutPage1.cshtml";
+   
+}
+
+<img asp-append-version="true" src="~/img/perfumery.jpg" width="100%" height="300" />
+
+<div style="width:80%;margin:30px auto;direction:rtl">
+    <div class="row " style="margin-top:40px">
+        @foreach (var item in ViewBag.list as List<Perfume>)
+        {
+            var lenght = @item.Price.ToString("N2").Length;
+            <div class="col-lg-3 col-md-3 mb-4" style="margin-top:40px">
+                <div class="card text-right">
+                    <img src="@item.Image" class="card-img-top" width="150" height="200" />
+                    <div class="card-body">
+                        <h4 class="card-title">@item.Name</h4>
+                      
+                        <p class="card-text">@item.Description</p>
+                        <h4 class="text-primary">
+                            @item.Price.ToString("N2").Substring(0,lenght-3)  تومان
+                        </h4>
+                       <a asp-action="Details" class="btn btn-primary" asp-route-id="@item.Id">توضیحات بیشتر</a>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </div>
+                </div>
+            </div>
+
+        }
+    </div>
+    </div>
+<p>
+    <button class="btn btn-primary pull-left" asp-action="Create">اضافه کردن محصول جدید</button>
+</p>
+
+    @*<table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                  <img src="@Html.DisplayNameFor(model => model.Image)" height="200" width="200"/>
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Description)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Price)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>*@
+    @*@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Image)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>*@
+    @*}
+            </tbody>
+        </table>*@
