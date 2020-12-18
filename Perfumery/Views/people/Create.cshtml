@@ -1,0 +1,51 @@
+﻿@model Perfumery.Models.person
+
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Store.cshtml";
+}
+    <body dir="rtl" style="text-align:right">
+        <h1 >فرم ثبت نام</h1>
+        <hr />
+        <div class="row" dir="rtl">
+            <div class="col-md-4">
+                <form asp-action="Create" style="text-align:right">
+                    <div asp-validation-summary="ModelOnly" class="text-danger" dir="rtl"></div>
+                    <div class="form-group">
+                        <label asp-for="name" class="control-label"> نام</label>
+                        <input asp-for="name" class="form-control" />
+                        <span asp-validation-for="name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="family" class="control-label" dir="rtl">نام خانوادگی</label>
+                        <input asp-for="family" class="form-control" />
+                        <span asp-validation-for="family" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="userName" class="control-label" dir="rtl">نام کاربری</label>
+                        <input asp-for="userName" class="form-control" />
+                        <span asp-validation-for="userName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="password" class="control-label" dir="rtl">رمز کاربری</label>
+                        <input asp-for="password" class="form-control" />
+                        <span asp-validation-for="password" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-primary" />
+                        <button asp-action="login" asp-controller="home" class="btn btn-danger"> لغو </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div>
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </body>
+
+
+@*@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}*@

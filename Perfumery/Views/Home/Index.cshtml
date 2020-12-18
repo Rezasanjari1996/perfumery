@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Store.cshtml";
+}
+
+<style>
+    #msg {
+        font-family: Tahoma;
+        font-size: large;
+        color: palevioletred;
+        font-style: oblique;
+    }
+</style>
+
+<h2>Index</h2>
+
+<div id="msg">
+    پیام: @ViewData["massage1"]
+    <br />
+    پیام: @ViewBag.massage2
+
+</div>
+

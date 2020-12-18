@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+   // Layout = "~/Views/Shared/_Store.cshtml";
+}
+<html>
+<head>
+    <link href="~/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body dir="rtl">
+    <div style="width:80%;margin:30px auto;text-align:center">
+        <h2 style="text-align:center">Login</h2>
+        <form style="text-align:center" asp-action="login" asp-controller="people" method="get">
+            <label>نام کاربری  :</label>
+            <br />
+            <input type="text" name="userName" />
+            <br />
+            <label>پسورد :       </label>
+            <br />
+            <input type="text" name="password" />
+
+            <br />
+            <button type="submit" class="btn btn-primary">ورود</button>
+            <button class="btn btn-primary" asp-controller="people" asp-action="create">ثبت نام</button>
+        </form>
+
+    </div>
+
+
+
+</body>
+</html>
+
